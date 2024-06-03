@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MischaAI - Interactive Robot Art Installation</title>
+    <title>Interactive Robot Art Installation</title>
     <style>
         body, html {
             margin: 0;
@@ -23,6 +23,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+            z-index: 2;
         }
         header h1 {
             margin: 0;
@@ -35,13 +36,14 @@
         }
         .container {
             position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
+            top: 60px; /* Adjusted to be under the header */
+            left: 0;
+            width: 100%;
             text-align: center;
             background: rgba(0, 0, 0, 0.7);
             padding: 20px;
-            border-radius: 10px;
+            box-sizing: border-box;
+            z-index: 2;
         }
         .description {
             margin: 0;
@@ -50,11 +52,16 @@
         }
         video {
             position: fixed;
-            top: 0;
-            left: 0;
+            top: 50%;
+            left: 50%;
             min-width: 100%;
             min-height: 100%;
+            width: auto;
+            height: auto;
             z-index: -1;
+            transform: translate(-50%, -50%);
+            background-size: cover;
+            filter: brightness(70%);
         }
         footer {
             position: fixed;
@@ -64,6 +71,7 @@
             background: rgba(0, 0, 0, 0.5);
             text-align: center;
             padding: 10px 0;
+            z-index: 2;
         }
     </style>
 </head>
