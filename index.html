@@ -3,46 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Interactive Robot Art Installation</title>
+    <title>MischaAI - Interactive Robot Art Installation</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
+        body, html {
             margin: 0;
             padding: 0;
-            background-color: #f5f5f5;
-            color: #333;
+            height: 100%;
+            overflow: hidden;
+            font-family: Arial, sans-serif;
+            color: white;
         }
         header {
-            background-color: #4CAF50;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+        header a {
             color: white;
-            padding: 20px;
-            text-align: center;
+            text-decoration: none;
+            font-size: 18px;
         }
         .container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            background: rgba(0, 0, 0, 0.7);
             padding: 20px;
+            border-radius: 10px;
         }
         .description {
-            margin: 20px 0;
+            margin: 0;
             line-height: 1.6;
+            font-size: 20px;
+        }
+        video {
+            position: fixed;
+            top: 0;
+            left: 0;
+            min-width: 100%;
+            min-height: 100%;
+            z-index: -1;
         }
         footer {
-            background-color: #4CAF50;
-            color: white;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.5);
             text-align: center;
             padding: 10px 0;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
         }
     </style>
 </head>
 <body>
+    <video autoplay muted loop>
+        <source src="robots-drawing.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+    </video>
     <header>
         <h1>Interactive Robot Art Installation</h1>
+        <a href="https://www.instagram.com/mischa.ai/" target="_blank">Instagram</a>
     </header>
     <div class="container">
         <p class="description">
-            Welcome to the Interactive Robot Art Installation project. Here, I create interactive artworks using robots to draw on a canvas while driving. This creative collaboration is controlled by both humans and AI, bringing together technology and artistry in a unique and innovative way.
+            Welcome to the Interactive Robot Art Installation project. I am Mischa and I create robots that draw on a canvas while driving, controlled by both humans and AI in a creative collaboration.
         </p>
     </div>
     <footer>
