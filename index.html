@@ -1,142 +1,169 @@
-<!doctype html>
-<html lang="en" class="h-100" data-bs-theme="auto">
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-    <script src="dist/color-modes.js"></script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description"
+        content="Interactive Robot Art Installation using robots to draw on a canvas while driving, controlled by humans and AI in a creative collaboration." />
+    <meta name="author" content="Mischa (Michael Schaefer)" />
+    <title>IRAI - Interactive Robot Art Installation</title>
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="Mischa">
-    <title>Interactive Robot Art Installation by Mischa</title>
-
-    <link rel="canonical" href="https://mischa-robots.github.io/">
-
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
-
-    <link href="dist/css/bootstrap.min.css" rel="stylesheet">
-
-    <style>
-        .bd-placeholder-img {
-            font-size: 1.125rem;
-            text-anchor: middle;
-            -webkit-user-select: none;
-            -moz-user-select: none;
-            user-select: none;
-        }
-
-        @media (min-width: 768px) {
-            .bd-placeholder-img-lg {
-                font-size: 3.5rem;
-            }
-        }
-
-        .b-example-divider {
-            width: 100%;
-            height: 3rem;
-            background-color: rgba(0, 0, 0, .1);
-            border: solid rgba(0, 0, 0, .15);
-            border-width: 1px 0;
-            box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
-        }
-
-        .b-example-vr {
-            flex-shrink: 0;
-            width: 1.5rem;
-            height: 100vh;
-        }
-
-        .bi {
-            vertical-align: -.125em;
-            fill: currentColor;
-        }
-
-        .nav-scroller {
-            position: relative;
-            z-index: 2;
-            height: 2.75rem;
-            overflow-y: hidden;
-        }
-
-        .nav-scroller .nav {
-            display: flex;
-            flex-wrap: nowrap;
-            padding-bottom: 1rem;
-            margin-top: -1px;
-            overflow-x: auto;
-            text-align: center;
-            white-space: nowrap;
-            -webkit-overflow-scrolling: touch;
-        }
-
-        .btn-bd-primary {
-            --bd-violet-bg: #712cf9;
-            --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
-
-            --bs-btn-font-weight: 600;
-            --bs-btn-color: var(--bs-white);
-            --bs-btn-bg: var(--bd-violet-bg);
-            --bs-btn-border-color: var(--bd-violet-bg);
-            --bs-btn-hover-color: var(--bs-white);
-            --bs-btn-hover-bg: #6528e0;
-            --bs-btn-hover-border-color: #6528e0;
-            --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
-            --bs-btn-active-color: var(--bs-btn-hover-color);
-            --bs-btn-active-bg: #5a23c8;
-            --bs-btn-active-border-color: #5a23c8;
-        }
-
-        .bd-mode-toggle {
-            z-index: 1500;
-        }
-
-        .bd-mode-toggle .dropdown-menu .active .bi {
-            display: block !important;
-        }
-    </style>
-
-
-    <!-- Custom styles for this template -->
-    <link href="cover.css" rel="stylesheet">
+    <link href="dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="dist/css/styles.css" rel="stylesheet" />
 </head>
 
-<body class="d-flex h-100 text-center text-bg-dark">
+<body id="page-top">
 
-    <div class="video-background-holder">
-        <div class="video-background-overlay"></div>
-        <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
-            <source src="robots-drawing.mp4" type="video/mp4">
-        </video>
-        <div class="video-background-content container h-100">
-            <div class="d-flex h-100 text-center align-items-center">
-                <div class="w-100 text-white">
-                    <h1 class="display-4">Interactive Robot Art Installation</h1>
-                    <p class="lead mb-0">I create interactive artworks using robots to draw on a canvas while driving, controlled by both humans and AI in a creative collaboration.</p>
+    <!-- Navigation-->
+    <a class="menu-toggle rounded" href="#"><i class="fas fa-bars"></i></a>
+    <nav id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+            <li class="sidebar-brand"><a href="#page-top">IRAI</a></li>
+            <li class="sidebar-nav-item"><a href="#page-top">Home</a></li>
+            <li class="sidebar-nav-item"><a href="#about">About</a></li>
+            <li class="sidebar-nav-item"><a href="#services">Services</a></li>
+            <li class="sidebar-nav-item"><a href="#portfolio">Portfolio</a></li>
+        </ul>
+    </nav>
+
+    <!-- Header-->
+    <header class="header d-flex align-items-center">
+        <div class="container px-4 px-lg-5 text-center">
+            <h1 class="mb-1">IRAI - Interactive Robot Art Installation</h1>
+            <h3 class="mb-5"><em>My name is Mischa and I create interactive artworks using robots to draw on a canvas
+                    while driving, controlled by both humans and AI in a creative collaboration.</em></h3>
+            <a class="btn btn-primary btn-xl" href="#about">Find Out More</a>
+        </div>
+    </header>
+
+    <!-- About-->
+    <section class="content-section bg-light" id="about">
+        <div class="container px-4 px-lg-5 text-center">
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+                <div class="col-lg-10">
+                    <h2>What is the Interactive Robot Art Installation about?</h2>
+                    <p class="lead mb-5">
+                        I don't know, work in progress ;)
+                    </p>
+                    <a class="btn btn-dark btn-xl" href="#services">What I Offer</a>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-        <header class="mb-auto">
-            <div>
-                <h3 class="float-md-start mb-0">IRAI by Mischa</h3>
-                <nav class="nav nav-masthead justify-content-center float-md-end">
-                    <a class="nav-link fw-bold py-1 px-0 active" aria-current="page" href="#">Home</a>
-                    <!-- <a class="nav-link fw-bold py-1 px-0" href="#">Features</a>
-                    <a class="nav-link fw-bold py-1 px-0" href="#">Contact</a> -->
-                </nav>
+    <!-- Services-->
+    <section class="content-section bg-primary text-white text-center" id="services">
+        <div class="container px-4 px-lg-5">
+            <div class="content-section-heading">
+                <h3 class="text-secondary mb-0">What I Offer</h3>
+                <h2 class="mb-5">IRAI at your company event or summit</h2>
             </div>
-        </header>
+            <div class="row gx-4 gx-lg-5">
+                <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+                    <span class="service-icon rounded-circle mx-auto mb-3"><i class="icon-screen-smartphone"></i></span>
+                    <h4><strong>Company Event</strong></h4>
+                    <p class="text-faded mb-0">You want something special for your company event?</p>
+                    <p class="text-faded mb-0">IRAI is perfect to engage your employees and create unforgetable moments!
+                    </p>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+                    <span class="service-icon rounded-circle mx-auto mb-3"><i class="icon-pencil"></i></span>
+                    <h4><strong>Tech Summit</strong></h4>
+                    <p class="text-faded mb-0">You organize a tech summit or festival and need a special installation?
+                    </p>
+                    <p class="text-faded mb-0">IRAI is perfect to showcase the latest tech trends and create lasting
+                        memories for your visitors!</p>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-5 mb-md-0">
+                    <span class="service-icon rounded-circle mx-auto mb-3"><i class="icon-like"></i></span>
+                    <h4><strong>Learn AI and Robotics</strong></h4>
+                    <p class="text-faded mb-0">You want to teach AI and robotics in school, university or your company?
+                    </p>
+                    <p class="text-faded mb-0">IRAI is great as a learning platform for that! I can create courses
+                        specific for your audience.</p>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <span class="service-icon rounded-circle mx-auto mb-3"><i class="icon-mustache"></i></span>
+                    <h4><strong>Museum or Gallery</strong></h4>
+                    <p class="text-faded mb-0">Are you organizing an exhibition at a Museum or Gallery and need a
+                        special installation?</p>
+                    <p class="text-faded mb-0">IRAI is made for that!</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <footer class="mt-auto text-white-50">
-            <p>&copy; 2024 <a href="https://mischa-robots.github.io/" class="text-white">Interactive Robot Art
-                    Installation</a>, by Mischa. Instagram: <a href="https://www.instagram.com/mischa.ai/"
-                    class="text-white">@mischa.ai</a></p>
-        </footer>
-    </div>
+    <!-- Portfolio-->
+    <section class="content-section" id="portfolio">
+        <div class="container px-4 px-lg-5">
+            <div class="content-section-heading text-center">
+                <h3 class="text-secondary mb-0">Portfolio</h3>
+                <h2 class="mb-5">Recent Exhibitions</h2>
+            </div>
+            <div class="row gx-0">
+                <div class="col-lg-6">
+                    <a class="portfolio-item" href="#!">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <div class="h2">WIP</div>
+                                <p class="mb-0">work in progress!</p>
+                            </div>
+                        </div>
+                        <img class="img-fluid" src="assets/img/robot-1.jpg" alt="..." />
+                    </a>
+                </div>
+                <div class="col-lg-6">
+                    <a class="portfolio-item" href="#!">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <div class="h2">WIP</div>
+                                <p class="mb-0">work in progress!</p>
+                            </div>
+                        </div>
+                        <img class="img-fluid" src="assets/img/robot-2.jpg" alt="..." />
+                    </a>
+                </div>
+                <div class="col-lg-6">
+                    <a class="portfolio-item" href="#!">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <div class="h2">WIP</div>
+                                <p class="mb-0">work in progress!</p>
+                            </div>
+                        </div>
+                        <img class="img-fluid" src="assets/img/robot-3.jpg" alt="..." />
+                    </a>
+                </div>
+                <div class="col-lg-6">
+                    <a class="portfolio-item" href="#!">
+                        <div class="caption-content">
+                            <div class="h2">WIP</div>
+                            <p class="mb-0">work in progress!</p>
+                        </div>
+                        <img class="img-fluid" src="assets/img/robot-4.jpg" alt="..." />
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer-->
+    <footer class="footer text-center">
+        <div class="container px-4 px-lg-5">
+            <ul class="list-inline mb-5">
+                <li class="list-inline-item">
+                    <a class="social-link rounded-circle text-white" href="https://github.com/mischa-robots"><i class="icon-social-github"></i></a>
+                </li>
+            </ul>
+            <p class="text-muted small mb-0">Copyright &copy; Mischa 2024</p>
+        </div>
+    </footer>
+
+    <a class="scroll-to-top rounded" href="#page-top"><i class="fas fa-angle-up"></i></a>
+
     <script src="dist/js/bootstrap.bundle.min.js"></script>
-
+    <script src="dist/js/scripts.js"></script>
 </body>
 
 </html>
