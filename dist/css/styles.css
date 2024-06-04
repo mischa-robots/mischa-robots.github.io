@@ -12817,6 +12817,10 @@ footer.footer .social-link:hover {
     background-size: cover;
 }
 
+.header .container {
+    background: white;
+}
+
 .header h1,
 .header .h1 {
     font-size: 4rem;
