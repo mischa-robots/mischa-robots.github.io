@@ -182,22 +182,25 @@
             </div>
         </header>
 
-        <main class="px-3">
-
-            <video autoplay muted loop>
+        <div class="video-background-holder">
+            <div class="video-background-overlay"></div>
+            <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
                 <source src="robots-drawing.mp4" type="video/mp4">
-                Your browser does not support HTML5 video.
             </video>
-
-            <h1>Interactive Robot Art Installation by Mischa</h1>
-            <p class="lead">I create interactive artworks using robots to draw on a canvas while driving, controlled by both humans and AI in a creative collaboration.</p>
-            <!-- <p class="lead">
-                <a href="#" class="btn btn-lg btn-light fw-bold border-white bg-white">Learn more</a>
-            </p> -->
-        </main>
+            <div class="video-background-content container h-100">
+                <div class="d-flex h-100 text-center align-items-center">
+                    <div class="w-100 text-white">
+                        <h1 class="display-4">Interactive Robot Art Installation by Mischa</h1>
+                        <p class="lead mb-0">I create interactive artworks using robots to draw on a canvas while driving, controlled by both humans and AI in a creative collaboration.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <footer class="mt-auto text-white-50">
-            <p>&copy; 2024 <a href="https://mischa-robots.github.io/" class="text-white">Interactive Robot Art Installation</a>, by Mischa. Instagram: <a href="https://www.instagram.com/mischa.ai/" class="text-white">@mischa.ai</a></p>
+            <p>&copy; 2024 <a href="https://mischa-robots.github.io/" class="text-white">Interactive Robot Art
+                    Installation</a>, by Mischa. Instagram: <a href="https://www.instagram.com/mischa.ai/"
+                    class="text-white">@mischa.ai</a></p>
         </footer>
     </div>
     <script src="dist/js/bootstrap.bundle.min.js"></script>
